@@ -22,7 +22,7 @@ Docker
 
 3. Switch branch to master.Command:
 
-  $  git checkout master
+   $  git checkout master
 
 4. Build Dockerfile to generate the image ros-instrument:1.0,Command:
 

@@ -12,23 +12,31 @@ Docker
 
 # Steps to run the project
 
-1. Enter the ch2pub directory.Command:
+1. Clone the project on GitHub locally.Command:
 
-   $  cd ch2pub
+   $  git clone git@github.com:gtsfs7090/rOS-Instrumentation.git
 
-2. Build Dockerfile to generate the image ros-instrument:1.0,Command:
+2. Enter the rOS-Instrumentation directory.Command:
+
+   $  cd rOS-Instrumentation
+
+3. Switch branch to master.Command:
+
+  $  git checkout master
+
+4. Build Dockerfile to generate the image ros-instrument:1.0,Command:
 
    $  docker build -t ros-instrument:1.0 .
 
-3. Execute the ros-instrument:1.0 image. Command:
+5. Execute the ros-instrument:1.0 image. Command:
 
    $  docker run --name ro1 -it ros-instrument:1.0 sh
 
-4. Enter the /home/os directory. Command:
+6. Enter the /home/os directory. Command:
 
    $  cd /home/os
 
-5. Execute rCore with instrumentation. Command：
+7. Execute rCore with instrumentation. Command:
 
    $  qemu-system-riscv64 \
     -machine virt \

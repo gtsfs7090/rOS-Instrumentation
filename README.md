@@ -36,7 +36,11 @@ Docker
 
    $  cd /home/os
 
-7. Execute rCore with instrumentation. Command:
+7. Build the project. Command:
+
+   $  make build
+
+8. Execute rCore with instrumentation. Command:
 
    $  qemu-system-riscv64 \
     -machine virt \
